@@ -1,0 +1,40 @@
+.box {
+    position: relative;
+}
+.box-entered {
+color: red;
+}
+.box-entering {
+animation-name: example;
+animation-duration: 4s;
+}
+
+@keyframes example {
+
+0% {
+color: white;
+left: 500px;
+top: 0px;
+right: 0px;
+}
+25% {
+color: white;
+left: 0px;
+top: 0px;
+}
+50% {
+color: blue;
+left: 200px;
+top: 200px;
+}
+75% {
+color: green;
+left: 0px;
+top: 200px;
+}
+100% {
+color: green;
+left: 0px;
+top: 0px;
+}
+}
