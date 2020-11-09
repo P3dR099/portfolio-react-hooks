@@ -22,5 +22,9 @@
   },
   "devDependencies": {
     "nodemon": "^1.12.1"
-  }
+  },
+  "description": "Boilerplate for a basic ExpressJS backend",
+  "main": "app.js",
+  "author": "",
+  "license": "ISC"
 }
