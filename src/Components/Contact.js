@@ -62,7 +62,6 @@ const Contact = (props) => {
                             <Form.Label>Email</Form.Label>
                             <Form.Control type="text" name="email" {...bindEmail} />
                         </Form.Group>
-
                         <Form.Group>
                             <Form.Label>Asunto</Form.Label>
                             <Form.Control type="text" name="subject" {...bindSubject} />
