@@ -5,7 +5,7 @@ const cors = require('cors')
 
 
 
-const whitelist = [process.env.DOMAIN_REMOTE, process.env.DOMAIN_LOCAL]
+const whitelist = [process.env.DOMAIN_LOCAL, 'http://myportfolio-pedro.herokuapp.com']
 const corsOptions = {
     origin: (origin, cb) => {
         const originIsWhitelisted = whitelist.includes(origin)
