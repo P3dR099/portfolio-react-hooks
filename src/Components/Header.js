@@ -26,7 +26,6 @@ class Header extends Component {
 
                 <header id="home">
                     <Nav id="nav-wrap">
-
                         <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
                         <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
 
@@ -39,7 +38,6 @@ class Header extends Component {
                             <ListGroup.Item as="li" active><a className="smoothscroll" href="#contact">Contact</a></ListGroup.Item>
                         </ListGroup>
                     </Nav>
-
 
                     <div className="row banner">
                         <div className="banner-text">

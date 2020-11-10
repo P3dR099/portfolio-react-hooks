@@ -22,7 +22,7 @@ const Contact = (props) => {
     }
 
     const sendMail = () => {
-        axios.post('http://localhost:5000/send', {
+        axios.post('https://server-myportfolio.herokuapp.com/send', {
             name: nameUser,
             email: emailUser,
             subject: subject,
