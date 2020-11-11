@@ -6,7 +6,7 @@ const Resume = (props) => {
 
     if (props.data) {
         skillmessage = props.data.skillmessage;
-        props.data.education.map(function (education) {
+        education = props.data.education.map(function (education) {
             return <div key={education.school}><h3>{education.school}</h3>
                 <p className="info">{education.degree} <span>&bull;</span><em className="date">{education.graduated}</em></p>
                 <p>{education.description}</p></div>
@@ -18,7 +18,7 @@ const Resume = (props) => {
             </div>
         })
         skills = props.data.skills.map(function (skills) {
-            let projectImage = 'images/skills/' + skills.image;
+            const projectImage = 'images/skills/' + skills.image;
             return <div key={skills.name} style={{ margin: 10 }} className="five columns feature-item">
                 <img className='skill' style={{ width: 85 }} alt={skills.name} src={projectImage} />
                 <h5>{skills.name}</h5>
