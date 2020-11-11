@@ -1,14 +1,15 @@
-var express = require('express');
-var router = express.Router();
-var nodemailer = require('nodemailer');
-var cors = require('cors');
+const express = require('express');
+const router = express.Router();
+var cors = require('cors')
+const nodemailer = require('nodemailer');
 
 const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: 'gmail.com',
     auth: {
         user: process.env.EMAIL, //replace with the email address
         pass: process.env.PASS //replace with the password
-    }
+    },
+    secure: true,
 });
 
 // verify connection configuration
@@ -20,22 +21,23 @@ transporter.verify(function (error, success) {
     }
 });
 
-router.post('/send', (req, res, next) => {
+router.post('/send', cors(), (req, res, next) => {
     const name = req.body.name
-    const email = req.body.email
     const subject = req.body.subject
+    const email = req.body.email
     const message = req.body.message
-    const content = `name: ${name} \n email: ${email} \n subject: ${subject} \n message: ${message} `
+    const content = `name: ${name} \n email: ${process.env.EMAIL} \n subject: ${subject} \n message: ${message} `
+    console.log(content)
     const mail = {
         from: name,
-        to: email,
-        subject: subject,
-        text: message
+        to: process.env.EMAIL,
+        subject: `${name}: ${subject}`,
+        text: `${email},  ${message}`
     }
     transporter.sendMail(mail, (err, data) => {
         if (err) {
             res.json({
-                status: 'fail'
+                status: err
             })
         } else {
             res.json({

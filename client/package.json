@@ -8,11 +8,13 @@
         "jquery": "^3.2.1",
         "particles-bg": "^2.5.0",
         "react": "^16.2.0",
+        "react-animations": "^1.0.0",
         "react-bootstrap": "^1.4.0",
         "react-dom": "^16.2.0",
         "react-ga": "^2.3.5",
         "react-scripts": "1.0.17",
-        "react-transition-group": "^4.4.1"
+        "react-transition-group": "^4.4.1",
+        "styled-components": "^5.2.1"
     },
     "scripts": {
         "start": "REACT_APP_API_URL=https://server-myportfolio.herokuapp.com/ react-scripts start",

@@ -98,7 +98,7 @@
             },
             {
                 "name": " NodeJS",
-                "image": "nodeJS.png",
+                "image": "node-js.png",
                 "description": "Node es mi lenguaje de programación del lado de servidor con el que más cómodo me siento, he desarrollado todos mis proyectos con nodeJS y siempre me gusta hacer challenges con él"
             }
         ]
@@ -120,7 +120,7 @@
             {
                 "title": "App for aquaservice",
                 "category": "App para hackaton de aquaservice para potimizar ek reparto de carga y descarga de un empleado",
-                "image": "appHere.png"
+                "image": "app-here.png"
             }
         ]
     },

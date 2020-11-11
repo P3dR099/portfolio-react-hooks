@@ -1,7 +1,5 @@
 require('dotenv').config()
 
-// Debugger
-
 // App
 const express = require('express')
 const app = express()
