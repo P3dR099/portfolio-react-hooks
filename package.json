@@ -1,11 +1,23 @@
 {
-  "name": "porfolio-react-hooks",
-  "version": "1.0.0",
-  "description": "portfolio desarrollado con React y algo de hooks",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "personalportfolio",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "axios": "^0.21.0",
+        "bootstrap": "^4.5.3",
+        "jquery": "^3.2.1",
+        "particles-bg": "^2.5.0",
+        "react": "^16.2.0",
+        "react-bootstrap": "^1.4.0",
+        "react-dom": "^16.2.0",
+        "react-ga": "^2.3.5",
+        "react-scripts": "1.0.17",
+        "react-transition-group": "^4.4.1"
+    },
+    "scripts": {
+        "start": "REACT_APP_API_URL=https://server-myportfolio.herokuapp.com/ react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    }
 }

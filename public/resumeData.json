@@ -1,0 +1,139 @@
+{
+    "main": {
+        "name": "Pedro Conde",
+        "occupation": "Fullstack Developer",
+        "description": "Actualmente en busca de nuevos retos para continuar desarrollando mis skills!",
+        "image": "profilepic.png",
+        "bio": "Soy un joven apasionado de la teconología y de la programacion, con experiencia de más de 2 años desarrollando webs con JavaScript (tanto en el cliente como en el servidor). Me encuentro estudiando en 42 Madrid Telefónica donde aprendemos desarrollo de Software en C que intento compaginarlo con otros proyectos como la creación aplicaciones web",
+        "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
+        "email": "condepedro968@gmail.com",
+        "address": {
+            "street": "(Your Street)",
+            "city": "Madrid",
+            "zip": "28222"
+        },
+        "resumedownload": "https://drive.google.com/file/d/1fs0fGjUk_-mw7jr085xgN1YNWk53qt0s/view?usp=sharing",
+        "social": [
+            {
+                "name": "linkedin",
+                "url": "https://www.linkedin.com/in/pedroconde99/",
+                "className": "fa fa-linkedin"
+            },
+            {
+                "name": "github",
+                "url": "https://github.com/P3dR099",
+                "className": "fa fa-github"
+            },
+            {
+                "name": "codeworks",
+                "url": "https://www.codewars.com/users/P3dR099",
+                "className": "fa fa-code"
+            }
+        ]
+    },
+    "resume": {
+        "skillmessage": "Estas son las tecnologías que mas utilizo",
+        "education": [
+            {
+                "school": "Ironhack Bootcamp",
+                "degree": "Web Development",
+                "graduated": "Noviembre 2020",
+                "description": "FullStack Development Bootcamp en el que aprendemos a desarrollar aplicaciones con React, Express, Mongo, Bootstrap..."
+            },
+            {
+                "school": "42 Madrid Telefónica",
+                "degree": "Desarrollo de software",
+                "graduated": "2022",
+                "description": "Aprendemos a diseñar y desarrollar software con el lenguaje de programación C"
+            },
+            {
+                "school": "El Burgo Ignacio Echevarría",
+                "degree": "Grado Medio en Sistemas Microinformáticos y Redes",
+                "graduated": "2018",
+                "description": "Aprendemos a Instalar, configurar y mantener sistemas microinformáticos, aislados o en red, así como redes locales en pequeños entornos."
+            }
+        ],
+        "work": [
+            {
+                "company": " Engancharte ",
+                "years": "Septiembre 2020",
+                "description": "Aplicación de compra/venta de obras de arte, siguiendo el patrón MVC, con mongo en el modelo, usando handlebars en la vista y el back hecho con Express"
+            },
+            {
+                "company": "Designex",
+                "years": "Noviembre 2020",
+                "description": "Single-page application para personalizar camisetas, desarrollado con el stack de teconlogías MERN y react-bootstrap para el diseño"
+            }
+        ],
+        "skills": [
+            {
+                "name": "Git",
+                "image": "git.png",
+                "description": "Utilizo git para controlar las versiones de todos mis proyectos, hasta ahora es mi software de control de versiones favorito"
+            },
+            {
+                "name": " Python",
+                "image": "python.png",
+                "description": "Python fue el lenguaje que me hizo interesarme por la programación, su tipado dinámico y su flexibilidad hace muy amigable su uso"
+            },
+            {
+                "name": "Express",
+                "image": "express.png",
+                "description": "Express es un framework de lado del servidor para crear aplicaciones web y APIs, es mi favorito para crear las APIs para mis proyectos"
+            },
+            {
+                "name": "ReactJs",
+                "image": "react.png",
+                "description": "React es mi librería favorita para crear interfaces de usuario y diseñar el front de mis proyectos"
+            },
+            {
+                "name": "HTML5 and CSS",
+                "image": "html&css3.png",
+                "description": "Tengo una base sólida de html y css debido a la experiencia que he desarrollado a lo largo de todos los proyectos"
+            },
+            {
+                "name": " MongoDB",
+                "image": "mongo2.png",
+                "description": "Mongo es una base de datos no relacional, es mi favorita por su facilidad y velocidad en la integracion de datos"
+            },
+            {
+                "name": " NodeJS",
+                "image": "node-js.png",
+                "description": "Node es mi lenguaje de programación del lado de servidor con el que más cómodo me siento, he desarrollado todos mis proyectos con nodeJS y siempre me gusta hacer challenges con él"
+            }
+        ]
+    },
+    "portfolio": {
+        "projects": [
+            {
+                "title": "Designex",
+                "category": "Personalizador de camisetas(MVP) SPA aplication desarrollado con el stack de tecnologías MERN",
+                "image": "designex.jpg",
+                "url": "https://designex-client.herokuapp.com/designer"
+            },
+            {
+                "title": "Engancharte",
+                "category": "App de compra/venta de obras de arte desarrollado con Mongo, Express y Node",
+                "image": "engancharte.jpg",
+                "url": "https://engancharte.herokuapp.com/"
+            },
+            {
+                "title": "App for aquaservice",
+                "category": "App para hackaton de aquaservice para potimizar ek reparto de carga y descarga de un empleado",
+                "image": "app-here.png"
+            }
+        ]
+    },
+    "testimonials": {
+        "testimonials": [
+            {
+                "text": "Cualquier tecnología suficientemente avanzada es igual a la magia",
+                "user": "Arthur C. Clarke"
+            },
+            {
+                "text": "Una máquina puede hacer el trabajo de cincuenta hombres ordinarios. Ninguna máquina puede hacer el trabajo de un hombre extraordinario.",
+                "user": "Elbert Hubbard"
+            }
+        ]
+    }
+}
