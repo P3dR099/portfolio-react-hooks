@@ -1,37 +1,37 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Testimonials extends Component {
-    render() {
+const Testimonials = (props) => {
 
-        if (this.props.data) {
-            var testimonials = this.props.data.testimonials.map(function (testimonials) {
-                return <li key={testimonials.user}>
-                    <blockquote>
-                        <p>{testimonials.text}</p>
-                        <cite>{testimonials.user}</cite>
-                    </blockquote>
-                </li>
-            })
-        }
+    let testimonials
 
-        return (
-            <section id="testimonials">
-                <div className="text-container">
-                    <div className="row">
+    if (props.data) {
+        testimonials = props.data.testimonials.map(function (testimonials) {
+            return <li key={testimonials.user}>
+                <blockquote>
+                    <p>{testimonials.text}</p>
+                    <cite>{testimonials.user}</cite>
+                </blockquote>
+            </li>
+        })
+    }
 
-                        <div className="two columns header-col">
-                        </div>
+    return (
+        <section id="testimonials">
+            <div className="text-container">
+                <div className="row">
 
-                        <div className="ten columns flex-container">
-                            <ul className="slides">
-                                {testimonials}
-                            </ul>
-                        </div>
+                    <div className="two columns header-col">
+                    </div>
+
+                    <div className="ten columns flex-container">
+                        <ul className="slides">
+                            {testimonials}
+                        </ul>
                     </div>
                 </div>
-            </section>
-        );
-    }
+            </div>
+        </section>
+    );
 }
 
 export default Testimonials;

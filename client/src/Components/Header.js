@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Nav from 'react-bootstrap/Nav'
 import ListGroup from 'react-bootstrap/ListGroup'
 import ParticlesBg from 'particles-bg'
-import { Transition } from "react-transition-group";
+// import { Transition } from "react-transition-group";
 import styled, { keyframes } from 'styled-components';
-import { bounce } from 'react-animations';
+import { bounceInDown } from 'react-animations';
 
 const Header = (props) => {
 
     let name, occupation, description, city, networks
-
-    let classTransition = 'responsive-headline box box'
 
     if (props.data) {
         name = props.data.name;
@@ -23,9 +21,9 @@ const Header = (props) => {
     }
 
 
-    const bounceAnimation = keyframes`${bounce}`;
+    const bounceAnimation = keyframes`${bounceInDown}`;
     const BouncyDiv = styled.div`
-     animation: 1.2s ${bounceAnimation};
+     animation: 1.5s ${bounceAnimation};
     `;
 
     return (
@@ -49,27 +47,20 @@ const Header = (props) => {
 
                 <div className="row banner">
                     <div className="banner-text">
-                        <Transition timeout={500} in={true} appear>
-                            {status => (
-                                <BouncyDiv>
-                                    <h1 className={` ${classTransition}-${status}`}>Soy {name}.</h1>
-                                    <h3 className={` ${classTransition}-${status}`} ><span>{occupation}</span> viviendo en {city} . {description}.</h3>
-                                    <hr />
-                                    <ul className={`social ${classTransition}-${status}`} >
-                                        {networks}
-                                    </ul>
-                                </BouncyDiv>
-
-                            )}
-                        </Transition>
-
+                        <BouncyDiv>
+                            <h1 >Soy {name}.</h1>
+                            <h3 ><span>{occupation}</span> viviendo en {city} . {description}.</h3>
+                            <hr />
+                            <ul className="social" >
+                                {networks}
+                            </ul>
+                        </BouncyDiv>
                     </div >
                 </div >
 
                 <p className="scrolldown">
                     <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
                 </p>
-
             </header >
         </React.Fragment >
 
