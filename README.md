@@ -1,4 +1,4 @@
-# React JS Resume Web App      
+# React Hooks Resume Web App      
 
 ## React Hooks
 I've used hooks in the `Contact.js` component to send the mail
