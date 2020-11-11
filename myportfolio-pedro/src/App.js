@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactGA from 'react-ga';
 import './App.css';
 import Header from './Components/Header';
@@ -10,45 +10,39 @@ import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
 import axios from 'axios'
 
-class App extends Component {
+const App = () => {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            foo: 'bar',
-            resumeData: {}
-        };
+    const [resumeData, setResumeData] = useState({})
 
-        ReactGA.initialize('UA-110570651-1');
-        ReactGA.pageview(window.location.pathname);
 
-    }
+    ReactGA.initialize('UA-110570651-1');
+    ReactGA.pageview(window.location.pathname);
 
-    getResumeData() {
+
+    const getResumeData = () => {
 
         axios.get('/resumeData.json')
-            .then(res => this.setState({ resumeData: res.data }))
+            .then(res => setResumeData(res.data))
             .catch(error => alert(error))
 
     }
 
-    componentDidMount() {
-        this.getResumeData();
-    }
+    useEffect(() => {
+        getResumeData()
+    })
 
-    render() {
-        return (
-            <div className="App">
-                <Header data={this.state.resumeData.main} />
-                <About data={this.state.resumeData.main} />
-                <Resume data={this.state.resumeData.resume} />
-                <Portfolio data={this.state.resumeData.portfolio} />
-                <Testimonials data={this.state.resumeData.testimonials} />
-                <Contact data={this.state.resumeData.main} />
-                <Footer data={this.state.resumeData.main} />
-            </div>
-        );
-    }
+
+    return (
+        <div className="App">
+            <Header data={resumeData.main} />
+            <About data={resumeData.main} />
+            <Resume data={resumeData.resume} />
+            <Portfolio data={resumeData.portfolio} />
+            <Testimonials data={resumeData.testimonials} />
+            <Contact data={resumeData.main} />
+            <Footer data={resumeData.main} />
+        </div>
+    );
 }
 
 export default App;
