@@ -6,6 +6,13 @@ import ParticlesBg from 'particles-bg'
 import styled, { keyframes } from 'styled-components';
 import { bounceInDown } from 'react-animations';
 
+const bounceAnimation = keyframes`${bounceInDown}`;
+const BouncyDiv = styled.div`
+     animation: 1.5s ${bounceAnimation};
+    `;
+
+
+
 const Header = (props) => {
 
     let name, occupation, description, city, networks
@@ -19,12 +26,6 @@ const Header = (props) => {
             return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
         })
     }
-
-
-    const bounceAnimation = keyframes`${bounceInDown}`;
-    const BouncyDiv = styled.div`
-     animation: 1.5s ${bounceAnimation};
-    `;
 
     return (
         <React.Fragment>
